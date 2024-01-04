@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/test-app">
-    <file alias="qmldir">/Users/tpn/Documents/_basic_projects/test-app/build/test-app/qmldir</file>
-  </qresource>
-</RCC>
-
