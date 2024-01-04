@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/test-app/">
+    <file alias="main.qml">/Users/tpn/Documents/_basic_projects/test-app/main.qml</file>
+  </qresource>
+</RCC>
+

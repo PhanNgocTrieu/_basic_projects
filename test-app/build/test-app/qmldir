@@ -1,0 +1,4 @@
+module test-app
+typeinfo apptest-app.qmltypes
+prefer :/test-app/
+

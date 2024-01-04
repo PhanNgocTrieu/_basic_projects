@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/test-app">/Users/tpn/Documents/_basic_projects/test-app/build/test-app</file>
+
+  </qresource>
+</RCC>

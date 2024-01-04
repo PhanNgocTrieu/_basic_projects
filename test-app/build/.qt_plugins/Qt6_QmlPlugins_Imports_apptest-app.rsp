@@ -1,0 +1,14 @@
+-rootPath
+/Users/tpn/Documents/_basic_projects/test-app
+-cmake-output
+-output-file
+/Users/tpn/Documents/_basic_projects/test-app/build/.qt_plugins/Qt6_QmlPlugins_Imports_apptest-app.cmake
+-importPath
+/Users/tpn/Documents/_basic_projects/test-app/build/test-app
+-importPath
+/Users/tpn/Documents/_basic_projects/test-app/build
+-importPath
+/Users/tpn/Qt/6.5.2/macos/./qml
+-qrcFiles
+/Users/tpn/Documents/_basic_projects/test-app/build/.rcc/qmake_test-app.qrc
+/Users/tpn/Documents/_basic_projects/test-app/build/.rcc/apptest-app_raw_qml_0.qrc

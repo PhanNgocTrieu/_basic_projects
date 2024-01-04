@@ -5,10 +5,11 @@ project(test-app VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 6.5 COMPONENTS Quick REQUIRED)
+find_package(Qt6 6.5 COMPONENTS Quick OpenGL REQUIRED)
 
 qt_add_executable(apptest-app
     main.cpp
+    ${CMAKE_TOOLCHAIN_FILE}
 )
 
 qt_add_qml_module(apptest-app
