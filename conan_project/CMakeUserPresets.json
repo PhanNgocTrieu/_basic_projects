@@ -1,0 +1,9 @@
+{
+    "version": 4,
+    "vendor": {
+        "conan": {}
+    },
+    "include": [
+        "/home/as/work_space/clone/_basic_projects/conan_project/build/CMakePresets.json"
+    ]
+}
