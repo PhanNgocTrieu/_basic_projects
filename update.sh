@@ -8,11 +8,11 @@ case "${unameOut}" in
     *)          machine="UNKNOWN:${unameOut}"
 esac
 
-echo "Operating System: " ${machine}
-
 if [ "$machine" == "Mac" ]; then
     echo "Removing all .DS_Store files from MacOS"
     find . -name ".DS_Store" -exec rm {} \;
+elif [ "$machine" == "Linux" ]; then
+    echo "Working on Linux"
 fi
 
 git pull
