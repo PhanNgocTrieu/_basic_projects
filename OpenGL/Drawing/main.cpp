@@ -27,15 +27,9 @@ GLFWwindow *window;
 */
 static const GLfloat g_vertex_buffer_data[] = {
     /* x        Y        Z */
-    -1.0f,
-    -1.0f,
-    0.0f,
-    1.0f,
-    -1.0f,
-    0.0f,
-    0.0f,
-    1.0f,
-    0.0f,
+    -1.0f,     -1.0f,    0.0f,
+    1.0f,      -1.0f,    0.0f,
+    0.0f,      1.0f,     0.0f,
 };
 
 GLuint LoadShaders(const char *vertex_file_path, const char *fragment_file_path)
