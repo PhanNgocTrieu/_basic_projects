@@ -57,6 +57,7 @@ void update_circle_state(circle_properties& m_circle) {
 int main(void) {
     sf::RenderWindow window(sf::VideoMode(800, 460), "Screen");
     sf::RenderWindow window_2(sf::VideoMode(200,200), "Popup");
+    sf::Shape m_shape;
     // Limit the framerate to 60 frames per second (this step is optional)
     // window.setFramerateLimit(60);
 
