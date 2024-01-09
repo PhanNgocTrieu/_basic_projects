@@ -8,6 +8,30 @@
 #include <unordered_map>
 #include <sstream>
 
+enum Object_Type {
+    WIND = 0,
+    RECT,
+    CIRL,
+    FONT
+};
+
+enum Configure_Type : uint32_t {
+    WINDOW  = 0,
+    FONT,
+    RECT,
+    CIRL
+};
+class ObjectGeneric {
+    public:
+        ObjectGeneric* generate_object(const Object_Type& _typ) {
+
+        }
+};
+
+class Fonts : public ObjectGeneric {
+    
+};
+
 struct Color {
     int m_red{0};
     int m_green{0};
@@ -23,12 +47,6 @@ struct Properties {
     Properties(const Properties& _other) : width(_other.width), height(_other.height), scale(_other.scale) {}
 };
 
-enum Configure_Type : uint32_t {
-    WINDOW  = 0,
-    FONT,
-    RECT,
-    CIRL
-};
 
 struct Font {
     std::string m_family_name_file{""};
