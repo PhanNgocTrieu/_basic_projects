@@ -9,9 +9,9 @@
 #include <sstream>
 
 enum Object_Type {
-    WIND = 0,
+    WINDOW = 0,
     RECT,
-    CIRL,
+    CIRCLE,
     FONT
 };
 
@@ -19,17 +19,82 @@ enum Configure_Type : uint32_t {
     WINDOW  = 0,
     FONT,
     RECT,
-    CIRL
+    CIRCLE
 };
 class ObjectGeneric {
     public:
-        ObjectGeneric* generate_object(const Object_Type& _typ) {
+        ObjectGeneric* generate_object(const Object_Type& _typ, const std::vector<std::string>& properties) {
+            ObjectGeneric* new_obj = nullptr;
+            switch (_typ)
+            {
+                case Object_Type::WINDOW: {
+                    if (properties.size() == 2) {
+                        new_obj = new Window(atoi(properties[1].c_str()), atoi(properties[2].c_str()));
+                    }
+                    else {
+                        new_obj = new Window();
+                    }
+                    break;
+                }
+                case Object_Type::CIRCLE: {
+                    if (properties.size()) {
 
+                    }
+                    else {
+
+                    }
+                    break;
+                }
+                default: {
+                    break;
+                }
+            }
+
+            return new_obj;
         }
 };
 
+class Window: public ObjectGeneric {
+    public:
+        Window()
+        : m_height(0)
+        , m_width(0)
+        {}
+        Window(const int _w, const int _h)
+        : m_height(_w)
+        , m_width(_h)
+        {}
+
+        ~Window() {}
+    protected:
+        int m_height;
+        int m_width;
+};
+
 class Fonts : public ObjectGeneric {
+    public:
+        Fonts() {
+        }
+
+        ~Fonts() {
+        }
+
+    protected:
+        std::string m_family_name_file{""};
+        Color m_color;
+        int m_size{0};
+};
+
+class Rectangle : public ObjectGeneric {
+    public:
+        Rectangle() {}
+        ~Rectangle() {}
     
+    protected:
+        int m_width;
+        int m_height;
+        Color m_color;
+        Fonts m_font;
 };
 
 struct Color {
@@ -127,7 +192,7 @@ Object* parseObject(const std::string& _object_string) {
         {"Window", Configure_Type::WINDOW},
         {"Font", Configure_Type::FONT},
         {"Rectangle", Configure_Type::RECT},
-        {"Circle", Configure_Type::CIRL}
+        {"Circle", Configure_Type::CIRCLE}
     };
 
     std::cout << "_object : " << _object_string << std::endl;    
