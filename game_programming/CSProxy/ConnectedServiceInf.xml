@@ -1,0 +1,70 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="ese.hmi.csif">
+    <signal name="onConnectedChanged">
+        <arg name="signalName" type="s" direction="out"/>
+        <arg name="value" type="v" direction="out"/>
+    </signal>
+    <signal name="onDigitalKeySettingStatusChanged">
+        <arg name="value" type="b" direction="out"/>
+    </signal>
+    <signal name="onNetworkResultChanged">
+        <arg name="networkResult" type="i" direction="out"/>
+    </signal>
+    <signal name="onDCMWaveStatusChanged">
+        <arg name="dcmWaveStatus" type="iu" direction="out"/>
+    </signal>
+    <signal name="onDigitalKeyActiveStatusChanged">
+        <arg name="dcmWaveStatus" type="b" direction="out"/>
+    </signal>
+    <signal name="onDigitalKeyResponseResult">
+        <arg name="digKeyRespRes" type="iu" direction="out"/>
+    </signal>
+    <signal name="onCompletedStartOpening">
+    </signal>
+    <signal name="onInforChanged">
+        <arg name="listConnectedInf" type="s" direction="out"/>
+    </signal>
+    <signal name="onConnectedListChanged">
+        <arg name="conInfList" type="s" direction="out"/>
+    </signal>
+    <signal name="wallpaperDownloadStatusChanged">
+        <arg name="wallDownStt" type="i" direction="out"/>
+    </signal>
+    <signal name="networkResultChanged">
+        <arg name="networkResult" type="i" direction="out"/>
+    </signal>
+
+
+    <!-- Set-get Method -->
+    <method name="requestDeleteDigitalKey">
+    </method>
+    <method name="requestGetDigitalKeySettingStatus">
+      <arg type="i" direction="out"/>
+    </method>
+    <method name="requestSetDigitalKeySettingStatus">
+      <arg name="digKeySetStt" type="i" direction="in"/>
+    </method>
+    <method name="requestGetDigitalKeyActiveStatus">
+      <arg type="i" direction="out"/>
+    </method>
+    <method name="requestSetDigitalKeyActiveStatus">
+      <arg name="digKeySetActStt" type="i" direction="in"/>
+    </method>
+    <method name="requestStartCall">
+    </method>
+    <method name="requestEndCall">
+    </method>
+    <method name="requestGetConnectedInformations">
+      <arg type="a{sssbiiiibbbbbbbb}" direction="out"/>
+      <annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="QList&lt;srvwrp::ConnectedServiceWrapper::ConnectedInformation&gt;"/>
+    </method>
+    <method name="requestListWallPaperDownload">
+      <arg type="a{sssbiiiibbbbbbbb}" direction="out"/>
+      <annotation name="org.qtproject.QtDBus.QtTypeName.Out0" value="QList&lt;srvwrp::ConnectedServiceWrapper::ImageDataBase64&gt;"/>
+    </method>
+    <method name="requestResetNetwork">
+      <arg type="i" direction="out"/>
+    </method>
+  </interface>
+</node>
