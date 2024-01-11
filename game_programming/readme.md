@@ -67,6 +67,13 @@
         RGB Color           (R,G,B)     int, int, int
         Size                (W,H)       float, float
 
+    Circle N X Y SX SY R G B R
+        Defines a CircleShape with:
+        Shape Name          N           std::string
+        Initial Position    (X,Y)       float, float
+        Initial Speed       (SX,SY)     float, float
+        RGB Color           (R,G,B)     int, int, int
+        Radius              R           float
     ---------------------------------------------------------------------------------------------------
     Assignment hints
     ---------------------------------------------------------------------------------------------------

@@ -51,6 +51,11 @@
         "cinttypes": "cpp",
         "typeinfo": "cpp",
         "unordered_set": "cpp",
-        "ratio": "cpp"
+        "ratio": "cpp",
+        "chrono": "cpp",
+        "condition_variable": "cpp",
+        "cstring": "cpp",
+        "shared_mutex": "cpp",
+        "thread": "cpp"
     }
 }
