@@ -1,7 +1,0 @@
-module UICommon.Components
-singleton CConstants 1.0 CConstants.qml
-CToggleSwitch 1.0 CToggleSwitch.qml
-CItem 1.0 CItem.qml
-Circle Circle.qml
-CText 1.0 Ctext.qml
-CHeader 1.0 CHeader.qml
