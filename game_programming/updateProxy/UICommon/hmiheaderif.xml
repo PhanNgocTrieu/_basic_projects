@@ -1,0 +1,189 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="ese.hmi.header">
+    <signal name="onOTAErrInfo">
+      <arg name="errInfo" type="b" direction="out"/>
+    </signal>
+    <method name="OTAErrInfo">
+      <arg name="errInfo" type="b" direction="in"/>
+    </method>
+    <signal name="onWifiStatus">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <method name="wifiStatus">
+      <arg name="status" type="b" direction="in"/>
+    </method>
+    <signal name="onBluetoothStatus">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <method name="bluetoothStatus">
+      <arg name="status" type="b" direction="in"/>
+    </method>
+    <signal name="onBluetoothPowerStatus">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <method name="bluetoothPowerStatus">
+      <arg name="status" type="b" direction="in"/>
+    </method>
+    <signal name="onWifiPowerStatus">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <method name="wifiPowerStatus">
+      <arg name="status" type="b" direction="in"/>
+    </method>
+    <signal name="onGetWifiAndBluePowerStatus">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <signal name="onSetIsDrivingNow">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <method name="setIsDrivingNow">
+      <arg name="status" type="b" direction="in"/>
+    </method>
+    <signal name="onSetIs12hFormat">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <method name="setIs12hFormat">
+      <arg name="status" type="b" direction="in"/>
+    </method>
+    <signal name="onSetIsTAfromSMD">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <method name="setIsTAfromSMD">
+      <arg name="status" type="b" direction="in"/>
+    </method>
+    <signal name="onSetIsAccount">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <method name="setIsAccount">
+      <arg name="status" type="b" direction="in"/>
+    </method>
+    <signal name="onSetIsNotify">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <method name="setIsNotify">
+      <arg name="status" type="b" direction="in"/>
+    </method>
+
+    <signal name="onSetIsDownload">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <method name="setIsDownload">
+      <arg name="status" type="b" direction="in"/>
+    </method>
+    <signal name="onSetIsStatusOTA">
+      <arg name="status" type="i" direction="out"/>
+    </signal>
+    <method name="setIsStatusOTA">
+      <arg name="status" type="i" direction="in"/>
+    </method>
+    <signal name="onSetIsActive">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <method name="setIsActive">
+      <arg name="status" type="b" direction="in"/>
+    </method>
+    <signal name="onSetIsError">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <method name="setIsError">
+      <arg name="status" type="b" direction="in"/>
+    </method>
+    <signal name="onSetIsCancel">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <method name="setIsCancel">
+      <arg name="status" type="b" direction="in"/>
+    </method>
+        <signal name="onSetTemperature">
+      <arg name="value" type="d" direction="out"/>
+    </signal>
+    <method name="setTemperature">
+      <arg name="value" type="d" direction="in"/>
+    </method>
+    <signal name="onChangeTemperature">
+      <arg name="newTemperature" type="d" direction="out"/>
+      <arg name="isEurope" type="b" direction="out"/>
+      <arg name="isTemperatureUnitC" type="b" direction="out"/>
+    </signal>
+    <method name="changeTemperature">
+      <arg name="newTemperature" type="d" direction="in"/>
+      <arg name="isEurope" type="b" direction="in"/>
+      <arg name="isTemperatureUnitC" type="b" direction="in"/>
+    </method>
+    <signal name="onSetSttOff">
+      <arg name="value" type="i" direction="out"/>
+    </signal>
+    <method name="setSttOff">
+      <arg name="value" type="i" direction="in"/>
+    </method>
+    <signal name="onSetHeaterLeftLevel">
+      <arg name="value" type="i" direction="out"/>
+    </signal>
+    <method name="setHeaterLeftLevel">
+      <arg name="value" type="i" direction="in"/>
+    </method>
+    <signal name="onSetHeaterRightLevel">
+      <arg name="value" type="i" direction="out"/>
+    </signal>
+    <method name="setHeaterRightLevel">
+      <arg name="value" type="i" direction="in"/>
+    </method>
+    <signal name="onSetWindLeftAC">
+      <arg name="value" type="i" direction="out"/>
+    </signal>
+    <method name="setWindLeftAC">
+      <arg name="value" type="i" direction="in"/>
+    </method>
+    <signal name="onSetWindRightAC">
+      <arg name="value" type="i" direction="out"/>
+    </signal>
+    <method name="setWindRightAC">
+      <arg name="value" type="i" direction="in"/>
+    </method>
+    <signal name="onSetWarmLeftAC">
+      <arg name="value" type="i" direction="out"/>
+    </signal>
+    <method name="setWarmLeftAC">
+      <arg name="value" type="i" direction="in"/>
+    </method>
+    <signal name="onSetWarmRightAC">
+      <arg name="value" type="i" direction="out"/>
+    </signal>
+    <method name="setWarmRightAC">
+      <arg name="value" type="i" direction="in"/>
+    </method>
+    <signal name="onSetValueFan">
+      <arg name="value" type="i" direction="out"/>
+    </signal>
+    <method name="setValueFan">
+      <arg name="value" type="i" direction="in"/>
+    </method>    
+    <signal name="onSetIsAcMark">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <method name="setIsAcMark">
+      <arg name="status" type="b" direction="in"/>
+    </method>     
+    <signal name="onSendSysTime">
+      <arg name="time" type="s" direction="out"/>
+      <arg name="mediran" type="s" direction="out"/>
+    </signal>
+    <method name="sendSysTime">
+      <arg name="time" type="s" direction="in"/>
+      <arg name="mediran" type="s" direction="in"/>
+    </method>    
+    <signal name="onShowUpdateDisableIcon">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <method name="showUpdateDisableIcon">
+      <arg name="status" type="b" direction="in"/>
+    </method>
+    <signal name="onSetIsAndroidSet">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <method name="setIsAndroidSet">
+      <arg name="status" type="b" direction="in"/>
+    </method>    
+  </interface>
+</node>

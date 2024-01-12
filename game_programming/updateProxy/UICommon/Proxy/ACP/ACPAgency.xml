@@ -1,0 +1,62 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="ese.hmi.acpagency">
+    <signal name="onSessionStateChanged">
+      <arg name="oldState" type="i" direction="out"/>
+      <arg name="newState" type="i" direction="out"/>
+    </signal>
+    <signal name="onUSBConnectionStateChanged">
+      <arg name="oldState" type="i" direction="out"/>
+      <arg name="newState" type="i" direction="out"/>
+    </signal>
+    <signal name="onWifiConnectionStateChanged">
+      <arg name="oldState" type="i" direction="out"/>
+      <arg name="newState" type="i" direction="out"/>
+    </signal>
+    <signal name="onBrightnessChanged">
+      <arg name="value" type="i" direction="out"/>
+    </signal>
+    <signal name="onColorChanged">
+      <arg name="value" type="i" direction="out"/>
+    </signal>
+    <signal name="onConstractChanged">
+      <arg name="value" type="i" direction="out"/>
+    </signal>
+    <signal name="onChannelActive">
+      <arg name="channelType" type="i" direction="out"/>
+      <arg name="channelStatus" type="i" direction="out"/>
+    </signal>
+    <method name="getSessionState">
+      <arg type="i" direction="out"/>
+    </method>
+    <method name="setOperationMode">
+      <arg type="b" direction="out"/>
+      <arg name="mode" type="i" direction="in"/>
+    </method>
+    <method name="getConstract">
+      <arg type="i" direction="out"/>
+    </method>
+    <method name="getColor">
+      <arg type="i" direction="out"/>
+    </method>
+    <method name="getBrightness">
+      <arg type="i" direction="out"/>
+    </method>
+    <method name="setConstract">
+      <arg type="b" direction="out"/>
+      <arg name="value" type="i" direction="in"/>
+    </method>
+    <method name="setColor">
+      <arg type="b" direction="out"/>
+      <arg name="value" type="i" direction="in"/>
+    </method>
+    <method name="setBrightness">
+      <arg type="b" direction="out"/>
+      <arg name="value" type="i" direction="in"/>
+    </method>
+    <method name="setSourceOn\">
+      <arg type="b" direction="out"/>
+      <arg name="value" type="b" direction="in"/>
+    </method>
+  </interface>
+</node>

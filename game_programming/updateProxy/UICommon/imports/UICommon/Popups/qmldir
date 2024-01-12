@@ -1,0 +1,7 @@
+module UICommon.Popups
+PopupMsgTypeOne 1.0 PopupMsgTypeOne.qml
+PopupMsgTypeTwo 1.0 PopupMsgTypeTwo.qml
+PopupMsgTypeThree 1.0 PopupMsgTypeThree.qml
+PopupMsgTypeFourth 1.0 PopupMsgTypeFourth.qml
+PopupProgress 1.0 PopupProgress.qml
+PopupScrollBar 1.0 PopupScrollBar.qml

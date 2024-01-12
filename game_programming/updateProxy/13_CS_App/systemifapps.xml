@@ -1,0 +1,333 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="hmi.service.sysifapps">
+    <property name="appID" type="s" access="readwrite"/>
+    <property name="layoutType" type="i" access="readwrite"/>
+    <property name="appIdTiel" type="s" access="readwrite"/>
+    <property name="childAppActive" type="s" access="readwrite"/>
+    <property name="defaultLayout" type="av" access="readwrite"/>
+    <property name="defaultApps" type="av" access="readwrite"/>
+    <property name="defaultBarApps" type="av" access="readwrite"/>
+    <property name="showTestApp" type="b" access="readwrite"/>
+    <property name="currentApplication" type="s" access="readwrite"/>
+    <property name="currentMediaType" type="s" access="readwrite"/>
+    <property name="cameraIsOn" type="b" access="readwrite"/>
+    <property name="currentMeterType" type="i" access="readwrite"/>
+    <property name="currentScreenPath" type="s" access="readwrite"/>
+    <property name="currentPopupPath" type="s" access="readwrite"/>
+    <signal name="fullScreenDriverRecorder">
+    </signal>
+    <signal name="popupRequestShowSignal">
+      <arg name="isShow" type="b" direction="out"/>
+    </signal>
+    <signal name="expandScreen">
+      <arg type="s" direction="out"/>
+    </signal>
+    <signal name="signalChangeScreenSize">
+      <arg name="Appid" type="s" direction="out"/>
+    </signal>
+    <signal name="appIDChanged">
+    </signal>
+    <signal name="signalGetSettingTielType">
+    </signal>
+    <signal name="layoutTypeChanged">
+    </signal>
+    <signal name="propagatePosition">
+      <arg name="x" type="d" direction="out"/>
+      <arg name="y" type="d" direction="out"/>
+      <arg name="id" type="s" direction="out"/>
+      <arg name="doubleClick" type="b" direction="out"/>
+      <arg name="onlyAcceptRelease" type="b" direction="out"/>
+    </signal>
+    <signal name="appIdTielChanged">
+    </signal>
+    <signal name="signalSettingAppIdTile">
+      <arg name="appIdTiel" type="s" direction="out"/>
+    </signal>
+    <signal name="signalGetSettingTileAppId">
+    </signal>
+    <signal name="childAppActiveChanged">
+    </signal>
+    <signal name="writeNewSettingInfo">
+      <arg name="first" type="s" direction="out"/>
+      <arg name="second" type="s" direction="out"/>
+      <arg name="third" type="s" direction="out"/>
+    </signal>
+    <signal name="defaultLayoutChanged">
+    </signal>
+    <signal name="defaultAppsChanged">
+    </signal>
+    <signal name="defaultBarAppsChanged">
+    </signal>
+    <signal name="writeNewDefaultBarApps">
+      <arg name="first" type="s" direction="out"/>
+      <arg name="second" type="s" direction="out"/>
+      <arg name="third" type="s" direction="out"/>
+      <arg name="fourth" type="s" direction="out"/>
+      <arg name="fifth" type="s" direction="out"/>
+    </signal>
+    <signal name="fullExpandChanged">
+      <arg name="appId" type="s" direction="out"/>
+      <arg name="isFullExpand" type="b" direction="out"/>
+      <arg name="screenType" type="i" direction="out"/>
+      <arg name="changeSate" type="i" direction="out"/>
+    </signal>
+    <signal name="showTestAppChanged">
+    </signal>
+    <signal name="showInteralPopup">
+      <arg name="appId" type="s" direction="out"/>
+      <arg name="isShowPopup" type="b" direction="out"/>
+    </signal>
+    <signal name="showTopScreenOnApps">
+      <arg name="appId" type="s" direction="out"/>
+      <arg name="isShowTop" type="b" direction="out"/>
+    </signal>
+    <signal name="mediaTypeChanged">
+    </signal>
+    <signal name="callHDMIForHeader">
+    </signal>
+    <signal name="callCommunicateSettingForHeader">
+      <arg name="typeOfScreen" type="i" direction="out"/>
+    </signal>
+    <signal name="callCameraForHeader">
+      <arg type="i" direction="out"/>
+    </signal>
+    <signal name="callScreensOfAGivenApp">
+      <arg name="appID" type="s" direction="out"/>
+      <arg name="screenNums" type="i" direction="out"/>
+    </signal>
+    <signal name="sendAppIdToHeader">
+      <arg name="appId" type="s" direction="out"/>
+    </signal>
+    <signal name="signalEnableMultitouchSettingScreen">
+      <arg name="isEnable" type="b" direction="out"/>
+    </signal>
+    <signal name="signalShowDiagnosticScreen">
+      <arg name="isEnable" type="b" direction="out"/>
+    </signal>
+    <signal name="signalReturnToTopScreen">
+      <arg name="appID" type="s" direction="out"/>
+    </signal>
+    <signal name="addFavoriteToSystem">
+      <arg name="appId" type="s" direction="out"/>
+      <arg name="eventId" type="i" direction="out"/>
+    </signal>
+    <signal name="signallingDataThroughSys">
+      <arg type="s" direction="out"/>
+      <arg name="var" type="v" direction="out"/>
+    </signal>
+    <signal name="callScreensOfPhoneApp">
+      <arg name="appID" type="s" direction="out"/>
+      <arg name="screenNums" type="i" direction="out"/>
+    </signal>
+    <signal name="backToHome">
+      <arg name="previousScreen" type="s" direction="out"/>
+    </signal>
+    <signal name="backToPrevious">
+    </signal>
+    <signal name="calledBackToPrevious">
+    </signal>
+    <signal name="notifyReplyResultPopup">
+      <arg name="title" type="s" direction="out"/>
+      <arg name="data" type="v" direction="out"/>
+    </signal>
+    <signal name="disableWaitingScreen">
+      <arg type="b" direction="out"/>
+    </signal>
+    <signal name="signalErrorCodeForTest">
+      <arg name="appId" type="s" direction="out"/>
+      <arg name="errorCode" type="s" direction="out"/>
+    </signal>
+    <signal name="signallingDataThroughApp">
+      <arg type="s" direction="out"/>
+      <arg name="var" type="v" direction="out"/>
+    </signal>
+    <signal name="signalCloseScreenAndroidAuto">
+    </signal>
+    <signal name="onSetVolumeMinus">
+    </signal>
+    <signal name="onSetVolumePlus">
+    </signal>
+    <signal name="onSetVolumeMute">
+    </signal>
+    <signal name="currentMediaTypeChanged">
+    </signal>
+    <signal name="cameraIsOnChanged">
+    </signal>
+    <signal name="receivedUpdateScreenNotification">
+    </signal>
+    <signal name="currentMeterTypeChanged">
+    </signal>
+    <signal name="currentApplicationChanged">
+    </signal>
+    <signal name="currentScreenPathChanged">
+    </signal>
+    <signal name="currentPopupPathChanged">
+    </signal>
+    <method name="popupRequestShow">
+      <arg name="isShow" type="b" direction="in"/>
+    </method>
+    <method name="getFavoriteFromApps">
+      <arg name="appId" type="s" direction="in"/>
+      <arg name="eventId" type="i" direction="in"/>
+    </method>
+    <method name="getPositionToTransfer">
+      <arg name="x" type="d" direction="in"/>
+      <arg name="y" type="d" direction="in"/>
+      <arg name="id" type="s" direction="in"/>
+      <arg name="dbClick" type="b" direction="in"/>
+      <arg name="onlyAcceptRelease" type="b" direction="in"/>
+    </method>
+    <method name="getPositionToTransfer">
+      <arg name="x" type="d" direction="in"/>
+      <arg name="y" type="d" direction="in"/>
+      <arg name="id" type="s" direction="in"/>
+      <arg name="dbClick" type="b" direction="in"/>
+    </method>
+    <method name="getPositionToTransfer">
+      <arg name="x" type="d" direction="in"/>
+      <arg name="y" type="d" direction="in"/>
+      <arg name="id" type="s" direction="in"/>
+    </method>
+    <method name="getNewSettingInfo">
+      <arg name="first" type="s" direction="in"/>
+      <arg name="second" type="s" direction="in"/>
+      <arg name="third" type="s" direction="in"/>
+    </method>
+    <method name="getNewDefaultBarApps">
+      <arg name="first" type="s" direction="in"/>
+      <arg name="second" type="s" direction="in"/>
+      <arg name="third" type="s" direction="in"/>
+      <arg name="fourth" type="s" direction="in"/>
+      <arg name="fifth" type="s" direction="in"/>
+    </method>
+    <method name="callOutToExpand">
+      <arg name="app" type="s" direction="in"/>
+    </method>
+    <method name="callToExpandMaxsize">
+      <arg name="appId" type="s" direction="in"/>
+      <arg name="isFullExpand" type="b" direction="in"/>
+      <arg name="screenType" type="i" direction="in"/>
+      <arg name="enableHeader" type="b" direction="in"/>
+    </method>
+    <method name="callToExpandMaxsize">
+      <arg name="appId" type="s" direction="in"/>
+      <arg name="isFullExpand" type="b" direction="in"/>
+      <arg name="screenType" type="i" direction="in"/>
+    </method>
+    <method name="callToExpandMaxsize">
+      <arg name="appId" type="s" direction="in"/>
+      <arg name="isFullExpand" type="b" direction="in"/>
+    </method>
+    <method name="callToExpandMaxsize">
+      <arg name="appId" type="s" direction="in"/>
+    </method>
+    <method name="receiverForMediaType">
+      <arg name="type" type="s" direction="in"/>
+    </method>
+    <method name="callToShowInternalPopup">
+      <arg name="appId" type="s" direction="in"/>
+      <arg name="isShowPopup" type="b" direction="in"/>
+    </method>
+    <method name="callToShowInternalPopup">
+      <arg name="appId" type="s" direction="in"/>
+    </method>
+    <method name="callToShowTopScreen">
+      <arg name="appId" type="s" direction="in"/>
+      <arg name="isShowTop" type="b" direction="in"/>
+    </method>
+    <method name="callToShowTopScreen">
+      <arg name="appId" type="s" direction="in"/>
+    </method>
+    <method name="getAppIdForHeader">
+      <arg name="appId" type="s" direction="in"/>
+    </method>
+    <method name="enableMultitouchSettingScreen">
+      <arg name="isEnable" type="b" direction="in"/>
+    </method>
+    <method name="showDiagnosticScreen">
+      <arg name="isEnable" type="b" direction="in"/>
+    </method>
+    <method name="showDiagnosticScreen">
+    </method>
+    <method name="isLeftDriverPosition">
+      <arg type="b" direction="out"/>
+    </method>
+    <method name="receiveAppToCallOut">
+      <arg name="appID" type="s" direction="in"/>
+      <arg name="screenID" type="i" direction="in"/>
+    </method>
+    <method name="receivePhoneApp">
+      <arg name="appID" type="s" direction="in"/>
+      <arg name="screenID" type="i" direction="in"/>
+    </method>
+    <method name="sendDataThroughSys">
+      <arg type="s" direction="in"/>
+      <arg name="var" type="v" direction="in"/>
+    </method>
+    <method name="backToPreviousScreen">
+    </method>
+    <method name="replyResultPopup">
+      <arg name="title" type="s" direction="in"/>
+      <arg name="data" type="v" direction="in"/>
+    </method>
+    <method name="getDataThroughSys">
+      <arg type="s" direction="in"/>
+      <arg name="var" type="v" direction="in"/>
+    </method>
+    <method name="backToHomeScreen">
+    </method>
+    <method name="setCloseScreen">
+    </method>
+    <method name="gotoAndroidApp">
+    </method>
+    <method name="resizeWindowItem">
+      <arg name="SURFACE_ID" type="s" direction="in"/>
+      <arg name="width" type="i" direction="in"/>
+      <arg name="height" type="i" direction="in"/>
+    </method>
+    <method name="rePositionWindowItem">
+      <arg name="SURFACE_ID" type="s" direction="in"/>
+      <arg name="x" type="i" direction="in"/>
+      <arg name="y" type="i" direction="in"/>
+    </method>
+    <method name="updateScreenSuccesfully">
+    </method>
+    <method name="requestShowFullApp">
+      <arg type="s" direction="in"/>
+    </method>
+    <method name="getErrorCodeForTest">
+      <arg name="appId" type="s" direction="in"/>
+      <arg name="errorCode" type="s" direction="in"/>
+    </method>
+    <method name="changeScreenSize">
+      <arg name="Apps" type="s" direction="in"/>
+    </method>
+    <method name="getSettingTileType">
+    </method>
+    <method name="settingTileAppId">
+      <arg name="appIdTiel" type="s" direction="in"/>
+    </method>
+    <method name="getSettingTileAppId">
+    </method>
+    <method name="setlayoutType">
+      <arg name="newLayoutType" type="i" direction="in"/>
+    </method>
+    <method name="setappIdTiel">
+      <arg name="newAppIdTiel" type="s" direction="in"/>
+    </method>
+    <method name="setchildAppActive">
+      <arg name="newChildAppActive" type="s" direction="in"/>
+    </method>
+    <method name="mediaType">
+      <arg type="s" direction="out"/>
+    </method>
+    <method name="getAppIDForSignalReturnToTopScreen">
+      <arg name="appID" type="s" direction="in"/>
+    </method>
+    <method name="getCurrentMeterType">
+    </method>
+    <method name="checkCurrentScreen">
+    </method>
+  </interface>
+</node>

@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/HMIFramework">
+        <file>HMIQml/Common/RootScreen.qml</file>
+        <file>HMIQml/MainView.qml</file>
+        <file>HMIQml/MainViewAnimation1.qml</file>
+        <file>HMIQml/MainViewAnimation2.qml</file>
+        <file>HMIQml/Common/js/def_constants.js</file>
+        <file>HMIQml/Common/js/def_resources.js</file>
+    </qresource>
+</RCC>

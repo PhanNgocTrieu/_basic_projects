@@ -1,0 +1,33 @@
+module UICommon.CItems
+ButtonWidget 1.0 ButtonWidget.qml
+CColumnLayout 1.0 CColumnLayout.qml
+CColumn 1.0 CColumn.qml
+CFlickable 1.0 CFlickable.qml
+CImage 1.0 CImage.qml
+CItem 1.0 CItem.qml
+CListModel 1.0 CListModel.qml
+CListView 1.0 CListView.qml
+CLoader 1.0 CLoader.qml
+CMouseArea 1.0 CMouseArea.qml
+CPopupItem 1.0 CPopupItem.qml
+CPopup 1.0 CPopup.qml
+CPopup2 2.0 CPopup2.qml
+CRectangle 1.0 CRectangle.qml
+CRepeater 1.0 CRepeater.qml
+CRowLayout 1.0 CRowLayout.qml
+CRow 1.0 CRow.qml
+CSwitch 1.0 CSwitch.qml
+CTextInput 1.0 CTextInput.qml
+CText 1.0 CText.qml
+CSText 1.0 CSText.qml
+TextButton 1.0 TextButton.qml
+CEnableDrag 1.0 EnableDrag.qml
+CustomizedScrollBar 1.0 CustomizedScrollBar.qml
+VehicleBattery 1.0 VehicleBattery.qml
+CPopupList 1.0 CPopupList.qml
+singleton CFont 1.0 CFont.qml
+singleton CNumericFont 1.0 CNumericFont.qml
+SettingBattery 1.0 SettingBattery.qml
+ImageButton 1.0 ImageButton.qml
+RadioIndicator 1.0 RadioIndicator.qml
+CTextButton 1.0 CTextButton.qml

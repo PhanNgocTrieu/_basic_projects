@@ -1,0 +1,381 @@
+<RCC>
+    <qresource prefix="/qt-project.org/imports/UICommon/Base">
+        <file alias="qmldir">imports/UICommon/Base/qmldir</file>
+        <file alias="CommonFunction.qml">imports/UICommon/Base/CommonFunction.qml</file>
+        <file alias="UIConstants.qml">imports/UICommon/Base/UIConstants.qml</file>
+        <file alias="Logger.qml">imports/UICommon/Base/Logger.qml</file>
+        <file>imports/UICommon/Resources/back_button_normal.png</file>
+    </qresource>
+    <qresource prefix="/qt-project.org/imports/UICommon/Components">
+        <file alias="qmldir">imports/UICommon/Components/qmldir</file>
+        <file alias="CConstants.qml">imports/UICommon/Components/CConstants.qml</file>
+        <file alias="CToggleSwitch.qml">imports/UICommon/Components/CToggleSwitch.qml</file>
+        <file alias="Circle.qml">imports/UICommon/Components/Circle.qml</file>
+        <file alias="CItem.qml">imports/UICommon/Components/CItem.qml</file>
+        <file alias="CHeader.qml">imports/UICommon/Components/CHeader.qml</file>
+    </qresource>
+    <qresource prefix="/qt-project.org/imports/UICommon/Effects">
+        <file alias="qmldir">imports/UICommon/Effects/qmldir</file>
+        <file alias="maskeffect.frag.qsb">imports/UICommon/Effects/maskeffect.frag.qsb</file>
+        <file alias="maskeffect.vert.qsb">imports/UICommon/Effects/maskeffect.vert.qsb</file>
+        <file alias="CircleMaskEffect.qml">imports/UICommon/Effects/CircleMaskEffect.qml</file>
+        <file alias="DropShadowEffect.qml">imports/UICommon/Effects/DropShadowEffect.qml</file>
+        <file alias="OpacityMask.qml">imports/UICommon/Effects/OpacityMask.qml</file>
+        <file alias="TransparentSectionEffect.qml">imports/UICommon/Effects/TransparentSectionEffect.qml</file>
+        <file alias="RectangleGlow.qml">imports/UICommon/Effects/RectangleGlow.qml</file>
+        <file alias="rectangularglow.frag.qsb">imports/UICommon/Effects/rectangularglow.frag.qsb</file>
+        <file alias="BlurShadow.qml">imports/UICommon/Effects/BlurShadow.qml</file>
+        <file alias="GausianBlur.frag.qsb">imports/UICommon/Effects/GausianBlur.frag.qsb</file>
+        <file alias="GausianBlur.vert.qsb">imports/UICommon/Effects/GausianBlur.vert.qsb</file>
+        <file alias="GausianBlur.frag">imports/UICommon/Effects/GausianBlur.frag</file>
+        <file alias="GausianBlur.vert">imports/UICommon/Effects/GausianBlur.vert</file>
+    </qresource>
+    <qresource prefix="/qt-project.org/imports/UICommon/CItems">
+        <file alias="qmldir">imports/UICommon/CItems/qmldir</file>
+        <file alias="ButtonWidget.qml">imports/UICommon/CItems/ButtonWidget.qml</file>
+        <file alias="CColumnLayout.qml">imports/UICommon/CItems/CColumnLayout.qml</file>
+        <file alias="CColumn.qml">imports/UICommon/CItems/CColumn.qml</file>
+        <file alias="CFlickable.qml">imports/UICommon/CItems/CFlickable.qml</file>
+        <file alias="CImage.qml">imports/UICommon/CItems/CImage.qml</file>
+        <file alias="TextButton.qml">imports/UICommon/CItems/TextButton.qml</file>
+        <file alias="CItem.qml">imports/UICommon/CItems/CItem.qml</file>
+        <file alias="CListModel.qml">imports/UICommon/CItems/CListModel.qml</file>
+        <file alias="CListView.qml">imports/UICommon/CItems/CListView.qml</file>
+        <file alias="CLoader.qml">imports/UICommon/CItems/CLoader.qml</file>
+        <file alias="CMouseArea.qml">imports/UICommon/CItems/CMouseArea.qml</file>
+        <file alias="CPopupItem.qml">imports/UICommon/CItems/CPopupItem.qml</file>
+        <file alias="CPopup.qml">imports/UICommon/CItems/CPopup.qml</file>
+        <file alias="CPopup2.qml">imports/UICommon/CItems/CPopup2.qml</file>
+        <file alias="CRectangle.qml">imports/UICommon/CItems/CRectangle.qml</file>
+        <file alias="CRepeater.qml">imports/UICommon/CItems/CRepeater.qml</file>
+        <file alias="CRowLayout.qml">imports/UICommon/CItems/CRowLayout.qml</file>
+        <file alias="CRow.qml">imports/UICommon/CItems/CRow.qml</file>
+        <file alias="CSwitch.qml">imports/UICommon/CItems/CSwitch.qml</file>
+        <file alias="CTextInput.qml">imports/UICommon/CItems/CTextInput.qml</file>
+        <file alias="CText.qml">imports/UICommon/CItems/CText.qml</file>
+        <file alias="VehicleBattery.qml">imports/UICommon/CItems/VehicleBattery.qml</file>
+        <file alias="CustomizedScrollBar.qml">imports/UICommon/CItems/CustomizedScrollBar.qml</file>
+        <file alias="EnableDrag.qml">imports/UICommon/CItems/EnableDrag.qml</file>
+        <file alias="CFont.qml">imports/UICommon/CItems/CFont.qml</file>
+        <file alias="CNumericFont.qml">imports/UICommon/CItems/CNumericFont.qml</file>
+        <file alias="MaskPopup.png">imports/UICommon/Resources/MaskPopup.png</file>
+        <file alias="CSText.qml">imports/UICommon/CItems/CSText.qml</file>
+        <file alias="CPopupList.qml">imports/UICommon/CItems/CPopupList.qml</file>
+        <file alias="SettingBattery.qml">imports/UICommon/CItems/SettingBattery.qml</file>
+        <file alias="ImageButton.qml">imports/UICommon/CItems/ImageButton.qml</file>
+        <file alias="RadioIndicator.qml">imports/UICommon/CItems/RadioIndicator.qml</file>
+        <file alias="CTextButton.qml">imports/UICommon/CItems/CTextButton.qml</file>
+    </qresource>
+    <qresource prefix="/qt-project.org/imports/UICommon/Popups">
+        <file alias="qmldir">imports/UICommon/Popups/qmldir</file>
+        <file alias="MaskPopup.png">imports/UICommon/Resources/MaskPopup.png</file>
+        <file alias="Button_240x50_normal.png">imports/UICommon/Resources/Button_240x50_normal.png</file>
+        <file alias="Button_240x50_pressed.png">imports/UICommon/Resources/Button_240x50_pressed.png</file>
+        <file alias="Button_240x50_inactive.png">imports/UICommon/Resources/Button_240x50_inactive.png</file>
+        <file alias="bgrd_popup_784x500.png">imports/UICommon/Resources/bgrd_popup_784x500.png</file>
+        <file alias="bgrd_popup_784x344.png">imports/UICommon/Resources/bgrd_popup_784x344.png</file>
+        <file alias="bgrd_popup_784x304.png">imports/UICommon/Resources/bgrd_popup_784x304.png</file>
+        <file alias="bgrd_popup_784x296.png">imports/UICommon/Resources/bgrd_popup_784x296.png</file>
+        <file alias="bgrd_popup_784x216.png">imports/UICommon/Resources/bgrd_popup_784x216.png</file>
+        <file alias="PopupMsgTypeOne.qml">imports/UICommon/Popups/PopupMsgTypeOne.qml</file>
+        <file alias="PopupMsgTypeTwo.qml">imports/UICommon/Popups/PopupMsgTypeTwo.qml</file>
+        <file alias="PopupMsgTypeThree.qml">imports/UICommon/Popups/PopupMsgTypeThree.qml</file>
+        <file alias="button_normal.png">imports/UICommon/Resources/button_normal.png</file>
+        <file alias="PopupMsgTypeFourth.qml">imports/UICommon/Popups/PopupMsgTypeFourth.qml</file>
+        <file alias="circle_loading.png">imports/UICommon/Resources/circle_loading.png</file>
+        <file alias="Components/CText.qml">imports/UICommon/Popups/Components/CText.qml</file>
+        <file alias="PopupProgress.qml">imports/UICommon/Popups/PopupProgress.qml</file>
+        <file alias="highlight_slider.png">imports/UICommon/Resources/highlight_slider.png</file>
+        <file alias="bg_slider.png">imports/UICommon/Resources/bg_slider.png</file>
+        <file alias="PopupScrollBar.qml">imports/UICommon/Popups/PopupScrollBar.qml</file>
+        <file alias="bgrd_popup_784x288.png">imports/UICommon/Resources/bgrd_popup_784x288.png</file>
+        <file alias="Android_Auto.png">imports/UICommon/Resources/Android_Auto.png</file>
+        <file alias="Gradiant_Fade.png">imports/UICommon/Resources/Gradiant_Fade.png</file>
+        <file alias="button_normal_2.png">imports/UICommon/Resources/button_normal_2.png</file>
+        <file alias="button_pressed.png">imports/UICommon/Resources/button_pressed.png</file>
+        <file alias="bgrd_popup_784x312.png">imports/UICommon/Resources/bgrd_popup_784x312.png</file>
+        <file alias="bgrd_popup_784x272.png">imports/UICommon/Resources/bgrd_popup_784x272.png</file>
+        <file alias="bgrd_popup_784x232.png">imports/UICommon/Resources/bgrd_popup_784x232.png</file>
+        <file>imports/UICommon/Resources/bgrd_popup_784x256.png</file>
+        <file alias="Fade_Bottom.png">imports/UICommon/Resources/Fade_Bottom.png</file>
+        <file alias="Fade_Mid.png">imports/UICommon/Resources/Fade_Mid.png</file>
+        <file alias="Fade_Top.png">imports/UICommon/Resources/Fade_Top.png</file>
+    </qresource>
+    <qresource prefix="/qt-project.org/imports/UICommon/Resources">
+        <file alias="tab_active_layer_mask.png">imports/UICommon/Resources/tab_active_layer_mask.png</file>
+        <file alias="tab_active_right_bar_layer_mask.png">imports/UICommon/Resources/tab_active_right_bar_layer_mask.png</file>
+        <file alias="tab_droppable_layer_mask.png">imports/UICommon/Resources/tab_droppable_layer_mask.png</file>
+        <file alias="tab_droppable_right_bar_layer_mask.png">imports/UICommon/Resources/tab_droppable_right_bar_layer_mask.png</file>
+        <file alias="Vehicle_Image_Battery.png">imports/UICommon/Resources/Vehicle_Image_Battery.png</file>
+        <file alias="reflection.png">imports/UICommon/Resources/reflection.png</file>
+        <file alias="reflectionBase.png">imports/UICommon/Resources/reflectionBase.png</file>
+        <file alias="tab_bg_base.png">imports/UICommon/Resources/tab_bg_base.png</file>
+        <file alias="tab_bg_right_bar_base.png">imports/UICommon/Resources/tab_bg_right_bar_base.png</file>
+        <file alias="button_red.png">imports/UICommon/Resources/button_red.png</file>
+        <file>imports/UICommon/Resources/Ellipse 8.png</file>
+        <file>imports/UICommon/Resources/Circle_Normal.png</file>
+        <file>imports/UICommon/Resources/Circle_Tonedown.png</file>
+        <file>imports/UICommon/Resources/Background_Toggle_OFF_Normal.png</file>
+        <file>imports/UICommon/Resources/Background_Toggle_ON_Normal.png</file>
+        <file>imports/UICommon/Resources/arrow_right.png</file>
+        <file>imports/UICommon/Resources/back_button_pressed.png</file>
+        <file>imports/UICommon/Resources/header_divider.png</file>
+        <file>imports/UICommon/Resources/header_icon.png</file>
+        <file alias="arrow_right.png">imports/UICommon/Resources/arrow_right.png</file>
+        <file alias="back_button_normal.png">imports/UICommon/Resources/back_button_normal.png</file>
+        <file alias="back_button_pressed.png">imports/UICommon/Resources/back_button_pressed.png</file>
+        <file alias="header_divider.png">imports/UICommon/Resources/header_divider.png</file>
+        <file alias="header_icon.png">imports/UICommon/Resources/header_icon.png</file>
+        <file alias="tab_droppable_right_bar_layer_mask_double.png">imports/UICommon/Resources/tab_droppable_right_bar_layer_mask_double.png</file>
+        <file alias="tab_bg_right_bar_base_double.png">imports/UICommon/Resources/tab_bg_right_bar_base_double.png</file>
+        <file alias="tab_active_right_bar_layer_mask_double.png">imports/UICommon/Resources/tab_active_right_bar_layer_mask_double.png</file>
+        <file alias="Radio_Indicators_State_Active_Toggle_False_48x48.png">imports/UICommon/Resources/Radio_Indicator_State_Active_Toggle_False_48x48.png</file>
+        <file alias="Radio_Indicators_State_Active_Toggle_True_48x48.png">imports/UICommon/Resources/Radio_Indicator_State_Active_Toggle_True_48x48.png</file>
+        <file alias="Radio_Indicators_State_InActive_Toggle_False_48x48.png">imports/UICommon/Resources/Radio_Indicator_State_InActive_Toggle_False_48x48.png</file>
+        <file alias="Radio_Indicators_State_InActive_Toggle_True_48x48.png">imports/UICommon/Resources/Radio_Indicator_State_InActive_Toggle_True_48x48.png</file>
+        <file alias="Background_Item_Pressed_944x74.png">imports/UICommon/Resources/Background_Item_Pressed_944x74.png</file>
+        <file alias="Background_Item_Pressed_944x80.png">imports/UICommon/Resources/Background_Item_Pressed_944x80.png</file>
+        <file alias="Background_Item_Pressed_944x88.png">imports/UICommon/Resources/Background_Item_Pressed_944x88.png</file>
+        <file alias="Background_Item_Pressed_852x74.png">imports/UICommon/Resources/Background_Item_Pressed_852x74.png</file>
+        <file alias="Background_Item_Pressed_944x86.png">imports/UICommon/Resources/Background_Item_Pressed_944x86.png</file>
+        <file alias="Background_Item_Pressed_704x74.png">imports/UICommon/Resources/Background_Item_Pressed_704x74.png</file>
+        <file alias="Background_Item_Pressed_800x70.png">imports/UICommon/Resources/Background_Item_Pressed_800x70.png</file>
+        <file alias="Background_Item_Pressed_456x62.png">imports/UICommon/Resources/Background_Item_Pressed_456x62.png</file>
+        <file alias="Button_InActive_240x80.png">imports/UICommon/Resources/Button_InActive_240x80.png</file>
+        <file alias="Button_Normal_240x80.png">imports/UICommon/Resources/Button_Normal_240x80.png</file>
+        <file alias="Button_Pressed_240x80.png">imports/UICommon/Resources/Button_Pressed_240x80.png</file>
+        <file alias="Button_InActive_480x80.png">imports/UICommon/Resources/Button_InActive_480x80.png</file>
+        <file alias="Button_Normal_480x80.png">imports/UICommon/Resources/Button_Normal_480x80.png</file>
+        <file alias="Button_Pressed_480x80.png">imports/UICommon/Resources/Button_Pressed_480x80.png</file>
+        <file alias="Button_Normal_320x80.png">imports/UICommon/Resources/Button_Normal_320x80.png</file>
+        <file alias="Button_Pressed_320x80.png">imports/UICommon/Resources/Button_Pressed_320x80.png</file>
+        <file alias="backgroundPopup784x416.png">imports/UICommon/Resources/backgroundPopup784x416.png</file>
+        <file alias="Background_Popup_Text1.png">imports/UICommon/Resources/Background_Popup_Text1.png</file>
+        <file alias="Background_Popup_Text2.png">imports/UICommon/Resources/Background_Popup_Text2.png</file>
+        <file alias="Background_Popup_Text3.png">imports/UICommon/Resources/Background_Popup_Text3.png</file>
+        <file alias="Background_Popup_Text1_Button.png">imports/UICommon/Resources/Background_Popup_Text1_Button.png</file>
+        <file alias="Background_Popup_Text2_Button.png">imports/UICommon/Resources/Background_Popup_Text2_Button.png</file>
+        <file alias="Background_Popup_Text3_Button.png">imports/UICommon/Resources/Background_Popup_Text3_Button.png</file>
+        <file alias="Background_Minus_Normal_80x80.png">imports/UICommon/Resources/Background_Minus_Normal_80x80.png</file>
+        <file alias="Background_Minus_Pressed_80x80.png">imports/UICommon/Resources/Background_Minus_Pressed_80x80.png</file>
+        <file alias="Background_Minus_InActive_80x80.png">imports/UICommon/Resources/Background_Minus_InActive_80x80.png</file>
+        <file alias="Background_Plus_Normal_80x80.png">imports/UICommon/Resources/Background_Plus_Normal_80x80.png</file>
+        <file alias="Background_Plus_Pressed_80x80.png">imports/UICommon/Resources/Background_Plus_Pressed_80x80.png</file>
+        <file alias="Background_Plus_InActive_80x80.png">imports/UICommon/Resources/Background_Plus_InActive_80x80.png</file>
+        <file alias="Button_Pressed_200x80.png">imports/UICommon/Resources/Button_Pressed_200x80.png</file>
+        <file alias="Button_InActive_200x80.png">imports/UICommon/Resources/Button_InActive_200x80.png</file>
+        <file alias="Button_Selection_200x80.png">imports/UICommon/Resources/Button_Selection_200x80.png</file>
+        <file alias="Button_Nomal_112x88.png">imports/UICommon/Resources/Button_Nomal_112x88.png</file>
+        <file alias="Button_Press_112x88.png">imports/UICommon/Resources/Button_Press_112x88.png</file>
+        <file alias="Button_InActive_112x88.png">imports/UICommon/Resources/Button_InActive_112x88.png</file>
+        <file alias="Divider_Normal_672.png">imports/UICommon/Resources/Divider_Normal_672.png</file>
+        <file alias="Divider_Normal_768.png">imports/UICommon/Resources/Divider_Normal_768.png</file>
+        <file alias="Divider_Normal_424.png">imports/UICommon/Resources/Divider_Normal_424.png</file>
+        <file alias="Divider_Normal_456x2.png">imports/UICommon/Resources/Divider_Normal_456x2.png</file>
+        <file alias="Divider_Special_Pressed_912x2.png">imports/UICommon/Resources/Divider_Special_Pressed_912x2.png</file>
+        <file alias="Divider_Press_704.png">imports/UICommon/Resources/Divider_Press_704.png</file>
+        <file alias="Divider_Press_800.png">imports/UICommon/Resources/Divider_Press_800.png</file>
+        <file alias="Divider_Press_456.png">imports/UICommon/Resources/Divider_Press_456.png</file>
+        <file alias="Background_PopupList_Pressed_456x542.png">imports/UICommon/Resources/Background_PopupList_Pressed_456x542.png</file>
+        <file alias="Background_Popup_List_488x128.png">imports/UICommon/Resources/Background_Popup_List_488x128.png</file>
+        <file alias="Background_Popup_List_488x192.png">imports/UICommon/Resources/Background_Popup_List_488x192.png</file>
+        <file alias="Background_Popup_List_488x528.png">imports/UICommon/Resources/Background_Popup_List_488x528.png</file>
+        <file alias="Divider_Popup_List_Normal_424x2.png">imports/UICommon/Resources/Divider_Popup_List_Normal_424x2.png</file>
+        <file alias="Divider_Popup_List_Pressed_456x2.png">imports/UICommon/Resources/Divider_Popup_List_Pressed_456x2.png</file>
+        <file alias="Arrow_Right_InActive.png">imports/UICommon/Resources/Arrow_Right_InActive.png</file>
+        <file alias="Arrow_Right_Normal.png">imports/UICommon/Resources/Arrow_Right_Normal.png</file>
+        <file alias="Arrow_Right_Pressed.png">imports/UICommon/Resources/Arrow_Right_Pressed.png</file>
+        <file alias="Icon_Arrow_Down_InActive_80x80.png">imports/UICommon/Resources/Icon_Arrow_Down_InActive_80x80.png</file>
+        <file alias="Icon_Arrow_Down_Normal_80x80.png">imports/UICommon/Resources/Icon_Arrow_Down_Normal_80x80.png</file>
+        <file alias="Icon_Arrow_Down_Pressed_80x80.png">imports/UICommon/Resources/Icon_Arrow_Down_Pressed_80x80.png</file>
+        <file alias="Icon_Arrow_Up_InActive_80x80.png">imports/UICommon/Resources/Icon_Arrow_Up_InActive_80x80.png</file>
+        <file alias="Icon_Arrow_Up_Normal_80x80.png">imports/UICommon/Resources/Icon_Arrow_Up_Normal_80x80.png</file>
+        <file alias="Icon_Arrow_Up_Pressed_80x80.png">imports/UICommon/Resources/Icon_Arrow_Up_Pressed_80x80.png</file>
+        <file alias="Button_InActive_80x80.png">imports/UICommon/Resources/Button_InActive_80x80.png</file>
+        <file alias="Button_Normal_80x80.png">imports/UICommon/Resources/Button_Normal_80x80.png</file>
+        <file alias="Button_Pressed_80x80.png">imports/UICommon/Resources/Button_Pressed_80x80.png</file>
+        <file alias="Background_Popup_Text1_Calculator_784x248.png">imports/UICommon/Resources/Background_Popup_Text1_Calculator_784x248.png</file>
+        <file alias="Background_Popup_Text2_Calculator_784x288.png">imports/UICommon/Resources/Background_Popup_Text2_Calculator_784x288.png</file>
+        <file alias="Background_Popup_Text3_Calculator_784x328.png">imports/UICommon/Resources/Background_Popup_Text3_Calculator_784x328.png</file>
+        <file alias="Background_Popup_Text1_Button_Calculator_784x344.png">imports/UICommon/Resources/Background_Popup_Text1_Button_Calculator_784x344.png</file>
+        <file alias="Background_Popup_Text2_Button_Calculator_784x384.png">imports/UICommon/Resources/Background_Popup_Text2_Button_Calculator_784x384.png</file>
+        <file alias="Background_Popup_Text3_Button_Calculator_784x424.png">imports/UICommon/Resources/Background_Popup_Text3_Button_Calculator_784x424.png</file>
+        <file alias="Calculator_80x80.png">imports/UICommon/Resources/Calculator_80x80.png</file>
+        <file alias="Button_InActive_132x80.png">imports/UICommon/Resources/Button_InActive_132x80.png</file>
+        <file alias="Button_Normal_132x80.png">imports/UICommon/Resources/Button_Normal_132x80.png</file>
+        <file alias="Button_Pressed_132x80.png">imports/UICommon/Resources/Button_Pressed_132x80.png</file>
+        <file alias="Button_Selected_132x80.png">imports/UICommon/Resources/Button_Selected_132x80.png</file>
+        <file alias="Button_Red_240x80.png">imports/UICommon/Resources/Button_Red_240x80.png</file>
+        <file alias="Background_Popup_Text4_Calculator_784x368.png">imports/UICommon/Resources/Background_Popup_Text4_Calculator_784x368.png</file>
+        <file alias="Background_Popup_Text4.png">imports/UICommon/Resources/Background_Popup_Text4.png</file>
+        <file alias="Background_Popup_Text5.png">imports/UICommon/Resources/Background_Popup_Text5.png</file>
+        <file alias="Background_Popup_Text6.png">imports/UICommon/Resources/Background_Popup_Text6.png</file>
+        <file alias="Background_Popup_Text7.png">imports/UICommon/Resources/Background_Popup_Text7.png</file>
+        <file alias="Background_Popup_Text8.png">imports/UICommon/Resources/Background_Popup_Text8.png</file>
+        <file alias="Background_Popup_Text9.png">imports/UICommon/Resources/Background_Popup_Text9.png</file>
+        <file alias="Background_Popup_Text10.png">imports/UICommon/Resources/Background_Popup_Text10.png</file>
+        <file alias="Background_Popup_Text11.png">imports/UICommon/Resources/Background_Popup_Text11.png</file>
+        <file alias="Background_Popup_Text12.png">imports/UICommon/Resources/Background_Popup_Text12.png</file>
+        <file alias="Background_Popup_Text13.png">imports/UICommon/Resources/Background_Popup_Text13.png</file>
+        <file alias="Background_Popup_Text14.png">imports/UICommon/Resources/Background_Popup_Text14.png</file>
+        <file alias="Background_Popup_Text4_Button.png">imports/UICommon/Resources/Background_Popup_Text4_Button.png</file>
+        <file alias="Background_Popup_Text5_Button.png">imports/UICommon/Resources/Background_Popup_Text5_Button.png</file>
+        <file alias="Background_Popup_Text6_Button.png">imports/UICommon/Resources/Background_Popup_Text6_Button.png</file>
+        <file alias="Background_Popup_Text7_Button.png">imports/UICommon/Resources/Background_Popup_Text7_Button.png</file>
+        <file alias="Background_Popup_Text8_Button.png">imports/UICommon/Resources/Background_Popup_Text8_Button.png</file>
+        <file alias="Background_Popup_Text9_Button.png">imports/UICommon/Resources/Background_Popup_Text9_Button.png</file>
+        <file alias="Background_Popup_Text10_Button.png">imports/UICommon/Resources/Background_Popup_Text10_Button.png</file>
+        <file alias="Background_Popup_Text11_Button.png">imports/UICommon/Resources/Background_Popup_Text11_Button.png</file>
+        <file alias="Background_Popup_Text12_Button.png">imports/UICommon/Resources/Background_Popup_Text12_Button.png</file>
+        <file alias="Background_Popup_Text4_Button_Calculator.png">imports/UICommon/Resources/Background_Popup_Text4_Button_Calculator.png</file>
+        <file alias="Background_Popup_Text5_Calculator.png">imports/UICommon/Resources/Background_Popup_Text5_Calculator.png</file>
+        <file alias="Background_Popup_Text6_Calculator.png">imports/UICommon/Resources/Background_Popup_Text6_Calculator.png</file>
+        <file alias="Background_Popup_Text1_Button_Icon.png">imports/UICommon/Resources/Background_Popup_Text1_Button_Icon.png</file>
+        <file alias="Background_Popup_Text2_Button_Icon.png">imports/UICommon/Resources/Background_Popup_Text2_Button_Icon.png</file>
+        <file alias="Background_Popup_Text3_Button_Icon.png">imports/UICommon/Resources/Background_Popup_Text3_Button_Icon.png</file>
+        <file alias="Background_Popup_Text4_Button_Icon.png">imports/UICommon/Resources/Background_Popup_Text4_Button_Icon.png</file>
+        <file alias="Background_Popup_Text5_Button_Icon.png">imports/UICommon/Resources/Background_Popup_Text5_Button_Icon.png</file>
+        <file alias="Divider_Normal_880x2.png">imports/UICommon/Resources/Divider_Normal_880x2.png</file>
+        <file alias="Divider_Normal_852x2.png">imports/UICommon/Resources/Divider_Normal_852x2.png</file>
+        <file alias="Divider_Normal.png">imports/UICommon/Resources/Divider_Normal.png</file>
+        <file alias="Divider_Normal_ver_2.png">imports/UICommon/Resources/Divider_Normal_ver_2.png</file>
+        <file alias="Toggle_Divider.png">imports/UICommon/Resources/Toggle_Divider.png</file>
+        <file alias="Toggle_PressedDivider.png">imports/UICommon/Resources/Toggle_PressedDivider.png</file>
+        <file alias="Divider_Pressed_456x2.png">imports/UICommon/Resources/Divider_Pressed_456x2.png</file>
+        <file alias="Divider_Pressed_912x2.png">imports/UICommon/Resources/Divider_Pressed_912x2.png</file>
+        <file alias="Divider_Pressed_852x2.png">imports/UICommon/Resources/Divider_Pressed_852x2.png</file>
+        <file alias="Divider_Pressed.png">imports/UICommon/Resources/Divider_Pressed.png</file>
+        <file alias="Divider_Pressed_ver_2.png">imports/UICommon/Resources/Divider_Pressed_ver_2.png</file>
+        <file alias="Background_Popup_Text1_Title.png">imports/UICommon/Resources/Background_Popup_Text1_Title.png</file>
+        <file alias="Background_Popup_Text2_Title.png">imports/UICommon/Resources/Background_Popup_Text2_Title.png</file>
+        <file alias="Background_Popup_Text3_Title.png">imports/UICommon/Resources/Background_Popup_Text3_Title.png</file>
+        <file alias="Background_Popup_Text4_Title.png">imports/UICommon/Resources/Background_Popup_Text4_Title.png</file>
+        <file alias="Background_Popup_Text5_Title.png">imports/UICommon/Resources/Background_Popup_Text5_Title.png</file>
+        <file alias="Background_Popup_Text6_Title.png">imports/UICommon/Resources/Background_Popup_Text6_Title.png</file>
+        <file alias="Background_Popup_Text1_Title_Button.png">imports/UICommon/Resources/Background_Popup_Text1_Title_Button.png</file>
+        <file alias="Background_Popup_Text2_Title_Button.png">imports/UICommon/Resources/Background_Popup_Text2_Title_Button.png</file>
+        <file alias="Background_Popup_Text3_Title_Button.png">imports/UICommon/Resources/Background_Popup_Text3_Title_Button.png</file>
+        <file alias="Background_Popup_Text4_Title_Button.png">imports/UICommon/Resources/Background_Popup_Text4_Title_Button.png</file>
+        <file alias="Background_Popup_Text5_Title_Button.png">imports/UICommon/Resources/Background_Popup_Text5_Title_Button.png</file>
+        <file alias="Background_Popup_Text6_Title_Button.png">imports/UICommon/Resources/Background_Popup_Text6_Title_Button.png</file>
+        <file alias="Background_Popup_Text1_Title_Button_Calculator.png">imports/UICommon/Resources/Background_Popup_Text1_Title_Button_Calculator.png</file>
+        <file alias="Background_Popup_Text2_Title_Button_Calculator.png">imports/UICommon/Resources/Background_Popup_Text2_Title_Button_Calculator.png</file>
+        <file alias="Background_Popup_Text3_Title_Button_Calculator.png">imports/UICommon/Resources/Background_Popup_Text3_Title_Button_Calculator.png</file>
+        <file alias="Background_Popup_Text4_Title_Button_Calculator.png">imports/UICommon/Resources/Background_Popup_Text4_Title_Button_Calculator.png</file>
+        <file alias="Background_Popup_Text1_Icon.png">imports/UICommon/Resources/Background_Popup_Text1_Icon.png</file>
+        <file alias="Background_Popup_Text2_Icon.png">imports/UICommon/Resources/Background_Popup_Text2_Icon.png</file>
+        <file alias="Background_Popup_Text3_Icon.png">imports/UICommon/Resources/Background_Popup_Text3_Icon.png</file>
+        <file alias="Background_Popup_Text4_Icon.png">imports/UICommon/Resources/Background_Popup_Text4_Icon.png</file>
+        <file alias="Background_Popup_Text5_Icon.png">imports/UICommon/Resources/Background_Popup_Text5_Icon.png</file>
+        <file alias="Background_Popup_Text6_Icon.png">imports/UICommon/Resources/Background_Popup_Text6_Icon.png</file>
+        <file alias="Button_InActive_134x80.png">imports/UICommon/Resources/Button_InActive_134x80.png</file>
+        <file alias="Button_Normal_134x80.png">imports/UICommon/Resources/Button_Normal_134x80.png</file>
+        <file alias="Button_Pressed_134x80.png">imports/UICommon/Resources/Button_Pressed_134x80.png</file>
+        <file alias="Button_Selected_134x80.png">imports/UICommon/Resources/Button_Selected_134x80.png</file>
+        <file alias="Text_Button_InActive_320x80.png">imports/UICommon/Resources/Text_Button_InActive_320x80.png</file>
+        <file alias="Button_InActive_320x80.png">imports/UICommon/Resources/Button_InActive_320x80.png</file>
+        <file alias="Text_Button_Normal_320x80.png">imports/UICommon/Resources/Text_Button_Normal_320x80.png</file>
+        <file alias="Text_Button_Pressed_320x80.png">imports/UICommon/Resources/Text_Button_Pressed_320x80.png</file>
+        <file alias="Background_Popup_Text1_Process.png">imports/UICommon/Resources/Background_Popup_Text1_Process.png</file>
+        <file alias="Background_Popup_Text2_Process.png">imports/UICommon/Resources/Background_Popup_Text2_Process.png</file>
+        <file alias="Background_Popup_Text3_Process.png">imports/UICommon/Resources/Background_Popup_Text3_Process.png</file>
+        <file alias="Background_Popup_Text4_Process.png">imports/UICommon/Resources/Background_Popup_Text4_Process.png</file>
+        <file alias="Background_Popup_Text5_Process.png">imports/UICommon/Resources/Background_Popup_Text5_Process.png</file>
+        <file alias="checkBoxGround_1Line.png">imports/UICommon/Resources/checkBoxGround_1Line.png</file>
+        <file alias="checkBoxGround_2Line.png">imports/UICommon/Resources/checkBoxGround_2Line.png</file>
+        <file alias="Button_backGround_184x80.png">imports/UICommon/Resources/Button_backGround_184x80.png</file>
+        <file alias="button_InActive_184x80.png">imports/UICommon/Resources/button_InActive_184x80.png</file>
+        <file alias="button_normal_184x80.png">imports/UICommon/Resources/button_normal_184x80.png</file>
+        <file alias="button_pressed_184x80.png">imports/UICommon/Resources/button_pressed_184x80.png</file>
+        <file alias="DividerLine.png">imports/UICommon/Resources/DividerLine.png</file>
+        <file alias="Background_Popup_Text1_Button_Check.png">imports/UICommon/Resources/Background_Popup_Text1_Button_Check.png</file>
+        <file alias="Background_Popup_Text4_Button_Check.png">imports/UICommon/Resources/Background_Popup_Text4_Button_Check.png</file>
+        <file alias="Background_Popup_Text5_Button_Check.png">imports/UICommon/Resources/Background_Popup_Text5_Button_Check.png</file>
+        <file>imports/UICommon/Resources/bgrd_popup_784x232.png</file>
+        <file>imports/UICommon/Resources/Fade_Top.png</file>
+        <file>imports/UICommon/Resources/Fade_Mid.png</file>
+        <file>imports/UICommon/Resources/Fade_Bottom.png</file>
+        <file>imports/UICommon/Resources/bgrd_popup_784x312.png</file>
+        <file>imports/UICommon/Resources/bgrd_popup_784x272.png</file>
+        <file>imports/UICommon/Resources/button_normal_2.png</file>
+        <file>imports/UICommon/Resources/button_pressed.png</file>
+        <file>imports/UICommon/Resources/bgrd_popup_784x296.png</file>
+        <file>imports/UICommon/Resources/Button_240x50_pressed.png</file>
+        <file>imports/UICommon/Resources/Button_240x50_normal.png</file>
+        <file>imports/UICommon/Resources/Button_240x50_inactive.png</file>
+        <file>imports/UICommon/Resources/Gradiant_Fade.png</file>
+        <file>imports/UICommon/Resources/bgrd_popup_784x344.png</file>
+        <file>imports/UICommon/Resources/bgrd_popup_784x304.png</file>
+        <file>imports/UICommon/Resources/bgrd_popup_784x256.png</file>
+        <file>imports/UICommon/Resources/Android_Auto.png</file>
+        <file>imports/UICommon/Resources/bgrd_popup_784x500.png</file>
+        <file>imports/UICommon/Resources/bgrd_popup_784x288.png</file>
+        <file>imports/UICommon/Resources/tab_moving_background.png</file>
+        <file>imports/UICommon/Resources/tab_droppable_background.png</file>
+        <file>imports/UICommon/Resources/tab_active_background.png</file>
+        <file>imports/UICommon/Resources/highlight_slider.png</file>
+        <file>imports/UICommon/Resources/circle_loading.png</file>
+        <file>imports/UICommon/Resources/button_normal.png</file>
+        <file>imports/UICommon/Resources/bgrd_popup_784x216.png</file>
+        <file>imports/UICommon/Resources/bg_slider.png</file>
+        <file>imports/UICommon/Resources/MaskPopup.png</file>
+        <file alias="Button_adjust_inActive_80x80.png">imports/UICommon/Resources/Button_adjust_inActive_80x80.png</file>
+        <file alias="Button_adjust_normal_80x80.png">imports/UICommon/Resources/Button_adjust_normal_80x80.png</file>
+        <file alias="Button_adjust_pressed_80x80.png">imports/UICommon/Resources/Button_adjust_pressed_80x80.png</file>
+        <file alias="button_blue_200x50.png">imports/UICommon/Resources/button_blue_200x50.png</file>
+        <file alias="button_inactive_200x50.png">imports/UICommon/Resources/button_inactive_200x50.png</file>
+        <file alias="button_press_200x50.png">imports/UICommon/Resources/button_press_200x50.png</file>
+        <file alias="Button_Normal_96x80.png">imports/UICommon/Resources/Button_Normal_96x80.png</file>
+        <file alias="Button_Inactive_96x80.png">imports/UICommon/Resources/Button_Inactive_96x80.png</file>
+        <file alias="Button_Pressed_96x80.png">imports/UICommon/Resources/Button_Pressed_96x80.png</file>
+        <file alias="Button_Normal_195x80.png">imports/UICommon/Resources/Button_Normal_195x80.png</file>
+        <file alias="Button_Inactive_195x80.png">imports/UICommon/Resources/Button_Inactive_195x80.png</file>
+        <file alias="Button_Pressed_195x80.png">imports/UICommon/Resources/Button_Pressed_195x80.png</file>
+        <file alias="button_popupList_pressed_184x80.png">imports/UICommon/Resources/button_popupList_pressed_184x80.png</file>
+        <file alias="Button_adjust_incre_inactive_80x80.png">imports/UICommon/Resources/Button_adjust_incre_inactive_80x80.png</file>
+        <file alias="Button_adjust_incre_normal_80x80.png">imports/UICommon/Resources/Button_adjust_incre_normal_80x80.png</file>
+        <file alias="Button_adjust_incre_pressed_80x80.png">imports/UICommon/Resources/Button_adjust_incre_pressed_80x80.png</file>
+        <file alias="Button_adjust_decre_inactive_80x80.png">imports/UICommon/Resources/Button_adjust_decre_inactive_80x80.png</file>
+        <file alias="Button_adjust_decre_normal_80x80.png">imports/UICommon/Resources/Button_adjust_decre_normal_80x80.png</file>
+        <file alias="Button_adjust_decre_pressed_80x80.png">imports/UICommon/Resources/Button_adjust_decre_pressed_80x80.png</file>
+        <file alias="button_normal_blue_195x80.png">imports/UICommon/Resources/button_normal_blue_195x80.png</file>
+        <file alias="button_normal_blue_987x80.png">imports/UICommon/Resources/button_normal_blue_987x80.png</file>
+        <file alias="button_press_987x80.png">imports/UICommon/Resources/button_press_987x80.png</file>
+
+    </qresource>
+    <qresource prefix="/qt-project.org/imports/UICommon/GeneralNotifications">
+        <file alias="qmldir">imports/UICommon/GeneralNotifications/qmldir</file>
+        <file alias="Popup_Text_Button_Check.qml">imports/UICommon/GeneralNotifications/Popup_Text_Button_Check.qml</file>
+        <file alias="PopupBase.qml">imports/UICommon/GeneralNotifications/PopupBase.qml</file>
+        <file alias="Popup_Text.qml">imports/UICommon/GeneralNotifications/Popup_Text.qml</file>
+        <file alias="Popup_Text_Button.qml">imports/UICommon/GeneralNotifications/Popup_Text_Button.qml</file>
+        <file alias="Popup_Text_Button_Calculator.qml">imports/UICommon/GeneralNotifications/Popup_Text_Button_Calculator.qml</file>
+        <file alias="Popup_Text_Calculator.qml">imports/UICommon/GeneralNotifications/Popup_Text_Calculator.qml</file>
+        <file alias="Popup_Text_Button_Icon.qml">imports/UICommon/GeneralNotifications/Popup_Text_Button_Icon.qml</file>
+        <file alias="Popup_Text_Title.qml">imports/UICommon/GeneralNotifications/Popup_Text_Title.qml</file>
+        <file alias="Popup_Text_Title_Button.qml">imports/UICommon/GeneralNotifications/Popup_Text_Title_Button.qml</file>
+        <file alias="Popup_Text_Title_Button_Calculator.qml">imports/UICommon/GeneralNotifications/Popup_Text_Title_Button_Calculator.qml</file>
+        <file alias="Popup_Text_Icon.qml">imports/UICommon/GeneralNotifications/Popup_Text_Icon.qml</file>
+    </qresource>
+    <qresource prefix="/qt-project.org/imports/UICommon/Animation">
+        <file alias="qmldir">imports/UICommon/Animation/qmldir</file>
+        <file alias="AnimationObject.qml">imports/UICommon/Animation/AnimationObject.qml</file>
+        <file alias="ImgAnimation.qml">imports/UICommon/Animation/ImgAnimation.qml</file>
+    </qresource>
+    <qresource prefix="/qt-project.org/imports/UICommon/SettingDelegate">
+        <file alias="qmldir">imports/UICommon/SettingDelegate/qmldir</file>
+        <file alias="ToggleDelegate.qml">imports/UICommon/SettingDelegate/Delegates/ToggleDelegate.qml</file>
+        <file alias="Delegator.qml">imports/UICommon/SettingDelegate/Fundemental/Delegator.qml</file>
+        <file alias="Generator.qml">imports/UICommon/SettingDelegate/Generator.qml</file>
+        <file alias="Positioner.qml">imports/UICommon/SettingDelegate/Positioner.qml</file>
+        <file alias="InformationDelegate.qml">imports/UICommon/SettingDelegate/Delegates/InformationDelegate.qml</file>
+        <file alias="NavigateDelegate.qml">imports/UICommon/SettingDelegate/Delegates/NavigateDelegate.qml</file>
+        <file alias="SettingDelegateTemplate.qml">imports/UICommon/SettingDelegate/Fundemental/SettingDelegateTemplate.qml</file>
+        <file alias="ConfirmPopupDelegate.qml">imports/UICommon/SettingDelegate/Delegates/ConfirmPopupDelegate.qml</file>
+        <file alias="SelectionPopupComponent.qml">imports/UICommon/SettingDelegate/Fundemental/SelectionPopupComponent.qml</file>
+        <file alias="SelectionPopupDelegate.qml">imports/UICommon/SettingDelegate/Delegates/SelectionPopupDelegate.qml</file>
+        <file alias="AdjustDelegate.qml">imports/UICommon/SettingDelegate/Delegates/AdjustDelegate.qml</file>
+        <file alias="DelegateConstants.qml">imports/UICommon/SettingDelegate/PreDefined/DelegateConstants.qml</file>
+        <file alias="AdjustDate.qml">imports/UICommon/SettingDelegate/AdjustDate.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,7 @@
+module UICommon.Effects
+CircleMaskEffect 1.0 CircleMaskEffect.qml
+DropShadowEffect 1.0 DropShadowEffect.qml
+OpacityMask 1.0 OpacityMask.qml
+TransparentSectionEffect 1.0 TransparentSectionEffect.qml
+RectangleGlow 1.0 RectangleGlow.qml
+BlurShadow 1.0 BlurShadow.qml

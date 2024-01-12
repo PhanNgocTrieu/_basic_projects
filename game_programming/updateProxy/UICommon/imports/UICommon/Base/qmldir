@@ -1,0 +1,5 @@
+module UICommon.Base
+singleton CommonFunction 1.0 CommonFunction.qml
+singleton Logger 1.0 Logger.qml
+singleton UIConstants 1.0 UIConstants.qml
+
