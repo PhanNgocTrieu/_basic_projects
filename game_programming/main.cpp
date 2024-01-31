@@ -8,6 +8,12 @@
 #include <unordered_map>
 #include <sstream>
 
+inline const char* log_crit = "\x1b[41m[Logger]\x1b[0m: ";
+inline const char* log_info = "\x1b[32m[Logger]\x1b[0m: ";
+inline const char* log_debg = "\x1b[44m[Logger]\x1b[0m: ";
+inline const char* log_warn = "\x1b[42m[Logger]\x1b[0m: ";
+inline const char* log_erro = "\x1b[43m[Logger]\x1b[0m: ";
+
 enum Parse_Type {
     WINDOW = 0,
     RECT,
@@ -64,6 +70,10 @@ struct Properties {
 class Object {
     public:
         virtual Object* genetate_object(const std::vector<std::string>& properties) = 0;
+        Object* operator=(Object* _other) {
+            *this = *_other;
+            return this;
+        }
 };
 
 class Window: public Object {
@@ -76,7 +86,7 @@ class Window: public Object {
         : m_height(_w)
         , m_width(_h)
         {}
-
+        
         Object* genetate_object(const std::vector<std::string>& properties) override {
             Window* new_obj = nullptr;
             if (properties.size() == 3) {
@@ -104,9 +114,10 @@ class Window: public Object {
 };
 
 class Rectangle : public Object {
+    public:
         Rectangle() {}
-        Rectangle(const Ordinate_Properties& _p, const Color& _cl, const Fonts& _f)
-        : m_recProperties(_p), m_color(_cl), m_font(_f) {}
+        Rectangle(const Ordinate_Properties& _p, const Color& _cl)
+        : m_recProperties(_p), m_color(_cl) {}
         ~Rectangle() {}
 
     public:
@@ -118,12 +129,11 @@ class Rectangle : public Object {
         void setWidth(const int _w) { m_recProperties.m_width = _w; }
         void setHeight(const int _h) { m_recProperties.m_height = _h; }
         void setColor(const Color& _cl) { m_color(_cl); }
-        void setFont(const Fonts& _f) { m_font(_f); }
+        // void setFont(const Fonts& _f) { m_font(_f); }
     protected:
         std::string m_recName;
         Ordinate_Properties m_recProperties;
         Color m_color;
-        Fonts* m_font;
 };
 
 class Circle : public Object {
@@ -159,13 +169,13 @@ class Circle : public Object {
                 new_obj = new Circle();
             }
             // Rectangle* 
-            return nullptr;
+            return new_obj;
         }
     protected:
         std::string m_cirName;
         Ordinate_Properties m_cirProperties;
         Color m_color;
-        Fonts* m_font;
+        // Fonts* m_font;
 };
 
 class Fonts : public Object {
@@ -180,7 +190,9 @@ class Fonts : public Object {
         : m_fname(_fname), m_color(_cl), m_size(_size) {}
 
     public:
-        virtual Object* genetate_object(const std::vector<std::string>& properties) = 0;
+        Object* genetate_object(const std::vector<std::string>& properties) override {
+            return nullptr;
+        }
         ~Fonts() {}
 
         void setColor(const Color& _cl)  { m_color(_cl); }
@@ -239,35 +251,40 @@ Object* parseObject(const std::string& _object_string, Parse_Type& _parse) {
         {"Rectangle",   Parse_Type::RECT},
         {"Circle",      Parse_Type::CIRCLE}
     };
-    auto foundIt = _handle.find(_handle[_temp[0]]);
-    if (foundIt != _handle.end()) {
-        std::cout << "Parse Type error! ";
+    std::vector<std::string> _temp = split(_object_string, " ");
+    auto foundIt = _handle.find(_temp[0]);
+    if (foundIt == _handle.end()) {
+        std::cout << log_warn << "Parse Type error! ";
         return nullptr;
     }
 
     Object* object = nullptr;
     _parse = foundIt->second;
-    std::cout << "_object : " << _object_string << std::endl;    
-    std::vector<std::string> _temp = split(_object_string, " ");
 
     // Release object
     switch (_parse)
     {
         case Parse_Type::WINDOW: {
-            window = Window::genetate_object(_temp)
+            Window windowObj;
+            object = windowObj.genetate_object(_temp);
             break;
         }
         case Parse_Type::RECT: {
-            object = Rectangle::genetate_object(_temp);
+            Rectangle recObj;
+            object = recObj.genetate_object(_temp);
             break;
         }
-        case Parse_Type::CIRCLE: {
-            object = Circle::genetate_object(_temp);
-            break;
-        }
-        default: {
-            break;
-        }
+        // case Parse_Type::CIRCLE: {
+        //     object = Circle::genetate_object(_temp);
+        //     break;
+        // }
+        // default: {
+        //     break;
+        // }
+    }
+
+    if (object != nullptr) {
+        printf("--------------------->\n");
     }
     return object;
 }
@@ -284,31 +301,34 @@ int main(void) {
     // // }
     for (auto obj_ : object_string) {
         Parse_Type _parse_type;
+        std::cout << log_info << " Obj_: " << obj_ << std::endl;
         Object* _obj =  parseObject(obj_, _parse_type);
         if (_obj != nullptr) {
-            switch (_obj->m_type) {
+            switch (_parse_type) {
                 case Parse_Type::WINDOW: {
-                    window = new sf::RenderWindow(sf::VideoMode(_obj->m_properties.width, _obj->m_properties.height), "Window");
+                    std::cout << log_crit << " Generating window " << std::endl;
+                    window = new sf::RenderWindow(sf::VideoMode(reinterpret_cast<Window*>(_obj)->getWidth(), reinterpret_cast<Window*>(_obj)->getHeight()), "Window");
+                    break;
                 }
                 case Parse_Type::FONT: {
-                    if (!font.loadFromFile(""))
+                    // if (!font.loadFromFile(""))
                     break;
                 }
                 case Parse_Type::CIRCLE: {
                     break;
                 }
                 case Parse_Type::RECT: {
-                    
                     break;
                 }
                 default: {
                     break;
                 }
             }
-            std::cout << " Kind of object: " << static_cast<int>(_obj->m_type) << std::endl;
+        } else {
+            std::cout << " _obj is nullptr " << std::endl;
         }
     }
-
+    printf("\n================================\n");
     // sf::CircleShape circle;
     // circle.setScale(1.0, 1.0);
     // circle.setFillColor(sf::Color::Blue);

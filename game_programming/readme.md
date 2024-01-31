@@ -85,3 +85,14 @@
             - as well as the (width, height) size of the rectangle
     - Similarly, a sf::Text element's bounding rectangle can also be retrieved via text.getLocalBounds(), which you will need to use to center the text properly within a shape.
     - Please use C++ file reading (std::ifstream makes this easy) rather than C-style FILE reading. You will lose marks for using older C functions!
+
+
+configure.txt
+    Window 800 600
+    Font fonts/tech.ttf 18 255 255 255
+    Circle CGreen 100 100 -0.03 0.02 0 255 0 50
+    Circle CBlue 200 200 0.02 0.04 0 0 255 100
+    Circle CPurple 300 300 -0.02 -0.01 255 0 255 75
+    Rectangle RRed 200 200 0.1 0.15 255 0 0 50 25
+    Rectangle RGrey 300 250 -0.02 0.02 100 100 100 50 100
+    Rectangle RTeal 25 100 -0.02 -0.02 0 255 255 100 100
